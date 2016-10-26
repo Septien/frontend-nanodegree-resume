@@ -66,6 +66,7 @@ var work = {
         /*{
             /*"employer": "None",
             "title": "None",
+            "location": "None",
             "dates": "None",
             "description": "None"
         }*/

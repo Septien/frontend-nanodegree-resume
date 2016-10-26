@@ -32,12 +32,16 @@ var bio = {
 var formatterdName = HTMLheaderName.replace("%data%", bio.name);
 var formatterdRole = HTMLheaderRole.replace("%data%", bio.role);
 
-var work = {};
-
-work.position = "Student";
-work.employer = "None";
-work.years = 5;
-work.city = "Salamanca";
+var work = {
+    "jobs": [
+        {
+            "employer": "None",
+            "title": "None",
+            "dates": "None",
+            "description": "None"
+        }
+    ]
+};
 
 var education = {
     "schools": [

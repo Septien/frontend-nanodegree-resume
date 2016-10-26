@@ -62,15 +62,27 @@ if (bio.skills.length > 0) {
 }
 
 var work = {
-    /*"jobs": [
-        {
+    "jobs": [
+        /*{
             /*"employer": "None",
             "title": "None",
             "dates": "None",
             "description": "None"
-        }
-    ]*/
+        }*/
+    ]
 };
+
+if (work.jobs.length > 0) {
+    for (job in work.jobs) {
+        $("workExperience").append(HTMLworkStart);
+
+        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+        $(".work-entry :last").append(formattedEmployerTitle);
+    }
+}
 
 var education = {
     "schools": [

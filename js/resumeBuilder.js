@@ -1,16 +1,4 @@
-/*var awesomeThougths = "I am Jose and I am AWESOME!";
-console.log(awesomeThougths);
 
-funThoughts = awesomeThougths.replace("AWESOME", "FUN");
-$("#main").append(funThoughts);*/
-
-//var name = "Jose Septien";
-//var formatterdName = HTMLheaderName.replace("%data%", name);
-//var role = "Student and Programer";
-//var formatterdRole = HTMLheaderRole.replace("%data%", role);
-
-/*$("#main").prepend(formatterdRole);
-$("#main").prepend(formatterdName);*/
 
 var bio = {
     "name": "Jose Septien",

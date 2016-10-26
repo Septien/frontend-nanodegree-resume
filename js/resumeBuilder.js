@@ -1,7 +1,7 @@
 var bio = {
     "name": "Jose Septien",
     "role": "Student and Programer",
-    "contact": {
+    "contacts": {
         "mobil": "473-738-5512",
         "email": "jaseptienh@gmail.com",
         "twitter": "@jaSeptienh",
@@ -17,11 +17,11 @@ var bio = {
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobil);
-var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobil);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 var formattedPicture = HTMLbioPic.replace("%data%", bio.picture);
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 

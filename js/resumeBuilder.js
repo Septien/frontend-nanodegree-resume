@@ -1,5 +1,3 @@
-
-
 var bio = {
     "name": "Jose Septien",
     "role": "Student and Programer",
@@ -56,8 +54,7 @@ var work = {
             "title": "Clerk attendance",
             "location": "Guanajuato",
             "dates": "August 2010 - August 2012",
-            "description": "In charge of recieving money. Help the client with any technical issue \
-            and give/help them with whatever they need."
+            "description": "Who moved my cheese cheesy feet cauliflower cheese. Queso taleggio when the cheese comes out everybody's happy airedale ricotta cheese and wine paneer camembert de normandie. Swiss mozzarella cheese slices feta fromage frais airedale swiss cheesecake. Hard cheese blue castello halloumi parmesan say cheese stinking bishop jarlsberg."
         }
     ]
 };

@@ -15,7 +15,7 @@ $("#main").prepend(formatterdName);*/
 var bio = {
     "name": "Jose Septien",
     "role": "Student and Programer",
-    "contacts": {
+    "contact": {
         "mobil": "473-738-5512",
         "email": "jaseptienh@gmail.com",
         "twitter": "@jaSeptienh"
@@ -29,8 +29,15 @@ var bio = {
     ]
 };
 
-var formatterdName = HTMLheaderName.replace("%data%", bio.name);
-var formatterdRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedMobil = HTMLmobil.replace("%data%", bio.contact.mobil);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
+var formattedPicture = HTMLbioPic.replace("%data%", bio.picture);
+var foramttedSkills = HTMLskills.replace("%data%", bio.skills.join("    "));
 
 var work = {
     /*"jobs": [

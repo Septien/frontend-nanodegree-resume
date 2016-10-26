@@ -34,16 +34,10 @@ var formatterdRole = HTMLheaderRole.replace("%data%", bio.role);
 
 var work = {};
 
-var school = {};
-
 work.position = "Student";
 work.employer = "None";
 work.years = 5;
 work.city = "Salamanca";
-
-school.name = "UG";
-school.years = 5;
-school.city = "Salamanca";
 
 var education = {
     "schools": [

@@ -25,7 +25,7 @@ var bio = {
     "picture": "./images/fry.jpg",
     "welcomeMessage": "Welcome! This is my resume.",
     "skills": [
-        "C/C++", "Pyhton", "JS", "Processing", "HTML/CSS."
+        "C/C++", "Pyhton", "JS", "Processing", "HTML/CSS.", "Ruby"
     ]
 };
 
@@ -70,4 +70,19 @@ var education = {
         "url": "https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-4"
     }
     ]
-}
+};
+
+var projects = {
+    "projects": [
+        {
+            "title": "Use of neural networks to detect RGB colors.",
+            "dates": 2014,
+            "description": "Use a neural network to detect whether a predominant \
+            color of a pixel was R, G or B."
+            "images": [
+            "None",
+            "None"
+            ]
+        }
+    ]
+};

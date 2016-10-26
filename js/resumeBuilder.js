@@ -18,7 +18,7 @@ var bio = {
     "contact": {
         "mobil": "473-738-5512",
         "email": "jaseptienh@gmail.com",
-        "twitter": "@jaSeptienh"
+        "twitter": "@jaSeptienh",
         "github": "Septien",
         "location": "Guanajuato"
     },
@@ -31,7 +31,7 @@ var bio = {
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedMobil = HTMLmobil.replace("%data%", bio.contact.mobil);
+var formattedMobil = HTMLmobile.replace("%data%", bio.contact.mobil);
 var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
@@ -95,7 +95,7 @@ var projects = {
             "title": "Use of neural networks to detect RGB colors.",
             "dates": 2014,
             "description": "Use a neural network to detect whether a predominant \
-            color of a pixel was R, G or B."
+            color of a pixel was R, G or B.",
             "images": [
             "None",
             "None"

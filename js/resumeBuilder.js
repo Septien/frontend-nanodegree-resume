@@ -44,3 +44,36 @@ work.city = "Salamanca";
 school.name = "UG";
 school.years = 5;
 school.city = "Salamanca";
+
+var education = {
+    "schools": [
+    {
+        "name": "University of Guanajuato",
+        "location": "Guanajuato, Gto.",
+        "degree": "BA",
+        "majors": ["Eng"],
+        "dates": 2016,
+        "url": "http://www.ugto.mx"
+    }
+    ],
+    "onlineCourses": [
+    {
+        "title": "6.00.1x: Introduction to Computer Science and Programming using Pyhton.",
+        "school": "MITx",
+        "dates": 2016,
+        "url": "https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-8"
+    },
+    {
+        "title": "JavaScript Basics",
+        "school": "Udacity",
+        "dates": 2016,
+        "url": "https://www.udacity.com/course/javascript-basics--ud804"
+    },
+    {
+        "title": "6.00.2x: Introduction to Coputational Thinking and Data Science",
+        "school": "MITx",
+        "dates": 2016,
+        "url": "https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-4"
+    }
+    ]
+}

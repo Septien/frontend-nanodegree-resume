@@ -73,34 +73,36 @@ var work = {
     ]
 };
 
-if (work.jobs.length > 0) {
-    if (work.hasOwnPropertie(job)) {
-        for (job in work.jobs) {
-            $("workExperience").append(HTMLworkStart);
+function displayWork() {
+    if (work.jobs.length > 0) {
+        if (work.hasOwnPropertie(job)) {
+            for (job in work.jobs) {
+                $("workExperience").append(HTMLworkStart);
 
-            var formattedEmployer = "";
-            if (work.jobs[job].hasOwnPropertie(employer))
-                formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-            var formattedTitle = "";
-            if (work.jobs[job].hasOwnPropertie(title))
-                formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-            var formattedEmployerTitle = formattedEmployer + formattedTitle;
-            $(".work-entry :last").append(formattedEmployerTitle);
+                var formattedEmployer = "";
+                if (work.jobs[job].hasOwnPropertie(employer))
+                    formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+                var formattedTitle = "";
+                if (work.jobs[job].hasOwnPropertie(title))
+                    formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+                var formattedEmployerTitle = formattedEmployer + formattedTitle;
+                $(".work-entry :last").append(formattedEmployerTitle);
 
-            var formattedLocation = "";
-            if (work.jobs[job].hasOwnPropertie(location))
-                formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-            $(".work-entry :last").append(formattedLocation);
+                var formattedLocation = "";
+                if (work.jobs[job].hasOwnPropertie(location))
+                    formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+                $(".work-entry :last").append(formattedLocation);
 
-            var formatterDates = "";
-            if (work.jobs[job].hasOwnPropertie(dates))
-                formattedDates = HTMLworkLocation.replace("%data%", work.jobs[job].dates);
-            $(".work-entry :last").append(formattedDates);
+                var formatterDates = "";
+                if (work.jobs[job].hasOwnPropertie(dates))
+                    formattedDates = HTMLworkLocation.replace("%data%", work.jobs[job].dates);
+                $(".work-entry :last").append(formattedDates);
 
-            var formatterDescription = "";
-            if (work.jobs[job].hasOwnPropertie(description))
-                formattedDescription = HTMLworkLocation.replace("%data%", work.jobs[job].description);
-            $(".work-entry :last").append(formattedDescription);
+                var formatterDescription = "";
+                if (work.jobs[job].hasOwnPropertie(description))
+                    formattedDescription = HTMLworkLocation.replace("%data%", work.jobs[job].description);
+                $(".work-entry :last").append(formattedDescription);
+            }
         }
     }
 }

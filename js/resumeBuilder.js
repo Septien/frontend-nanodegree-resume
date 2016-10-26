@@ -35,10 +35,10 @@ var formatterdRole = HTMLheaderRole.replace("%data%", bio.role);
 var work = {
     "jobs": [
         {
-            "employer": "None",
+            /*"employer": "None",
             "title": "None",
             "dates": "None",
-            "description": "None"
+            "description": "None"*/
         }
     ]
 };

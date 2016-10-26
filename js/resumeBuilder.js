@@ -72,6 +72,12 @@ var education = {
         "school": "MITx",
         "dates": 2016,
         "url": "https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-4"
+    },
+    {
+        "title": "Intro to Relational Databases.",
+        "school": "Udacity",
+        "dates": 2016,
+        "url": "https://www.udacity.com/course/intro-to-relational-databases--ud197"
     }
     ]
 };

@@ -38,7 +38,6 @@ var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
 var formattedPicture = HTMLbioPic.replace("%data%", bio.picture);
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-var foramttedSkills = HTMLskills.replace("%data%", bio.skills.join("    "));
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
@@ -50,6 +49,17 @@ $("#topContacts").append(formattedTwitter);
 $("#topContacts").append(formattedLocation);
 
 $("#header").append(formattedPicture);
+$("#header").append(formattedWelcomeMsg);
+
+if (bio.skills.length > 0) {
+    $("#header").append(HTMLskillsStart);
+    console.log(HTMLskillsStart);
+    for (var skill in bio.skills) {
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
+        console.log(formattedSkill);
+        $("#skills").append(formattedSkill);
+    }
+}
 
 var work = {
     /*"jobs": [

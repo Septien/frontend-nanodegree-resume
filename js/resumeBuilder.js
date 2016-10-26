@@ -25,7 +25,7 @@ var bio = {
     "picture": "./images/fry.jpg",
     "welcomeMessage": "Welcome! This is my resume.",
     "skills": [
-        "C/C++", "Pyhton", "JS", "Processing", "HTML/CSS.", "Ruby"
+        "C/C++", "Pyhton", "JS", "Processing", "HTML/CSS", "Ruby"
     ]
 };
 

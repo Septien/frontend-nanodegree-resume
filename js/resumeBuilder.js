@@ -33,14 +33,14 @@ var formatterdName = HTMLheaderName.replace("%data%", bio.name);
 var formatterdRole = HTMLheaderRole.replace("%data%", bio.role);
 
 var work = {
-    "jobs": [
+    /*"jobs": [
         {
             /*"employer": "None",
             "title": "None",
             "dates": "None",
-            "description": "None"*/
+            "description": "None"
         }
-    ]
+    ]*/
 };
 
 var education = {

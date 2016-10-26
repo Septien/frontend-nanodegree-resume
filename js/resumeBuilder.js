@@ -31,13 +31,24 @@ var bio = {
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedMobil = HTMLmobile.replace("%data%", bio.contact.mobil);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobil);
 var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
 var formattedPicture = HTMLbioPic.replace("%data%", bio.picture);
 var foramttedSkills = HTMLskills.replace("%data%", bio.skills.join("    "));
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
+$("#topContacts").append(formattedMobile);
+$("#topContacts").append(formattedEmail);
+$("#topContacts").append(formattedGithub);
+$("#topContacts").append(formattedTwitter);
+$("#topContacts").append(formattedLocation);
+
+$("#header").append(formattedPicture);
 
 var work = {
     /*"jobs": [

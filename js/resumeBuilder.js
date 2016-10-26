@@ -116,7 +116,7 @@ var projects = {
         {
             "title": "Use of neural networks to detect RGB colors.",
             "dates": 2014,
-            "description": "Use a neural network to detect whether a predominant \
+            "description": "Use a neural network to detect whether the predominant \
             color of a pixel was R, G or B.",
             "images": [
             "None",

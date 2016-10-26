@@ -142,9 +142,33 @@ var projects = {
             "description": "Use a neural network to detect whether the predominant \
             color of a pixel was R, G or B.",
             "images": [
-            "None",
-            "None"
+            "images/197x148.gif",
+            "images/fry.jpg"
             ]
         }
     ]
 };
+
+projects.display = function() {
+    projects.projects.forEach(function(proj) {
+        $("#projects").append(HTMLprojectStart);
+
+        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", proj.title);
+        $(".project-entry:last").append(formattedProjectTitle);
+
+        var formattedDate = HTMLprojectDates.replace("%data%", proj.dates);
+        $(".project-entry:last").append(formattedDate);
+
+        var formattedDescription = HTMLprojectDescription.replace("%data%", proj.description);
+        $(".project-entry:last").append(formattedDescription);
+
+        if (proj.images.length > 0) {
+            proj.images.forEach(function(image){
+                var formattedImage = HTMLprojectImage.replace("%data%", image);
+                $(".project-entry:last").append(formattedImage);
+            });
+        }
+    })
+}
+
+projects.display();
